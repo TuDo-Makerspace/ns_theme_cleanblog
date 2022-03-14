@@ -38,9 +38,16 @@
 						</ul>
 						<f:if condition="{settings.copyright_text}">
 									<p class="copyright text-muted">
-										<a target="_blank" rel="nofollow" href="{f:uri.typolink(parameter:'{settings.copyright_link}')}">
-											<f:cObject typoscriptObjectPath="lib.copyright"/> 
-										</a>
+										<f:if condition="{settings.copyright_link}">
+											<f:then>
+												<a target="_blank" rel="nofollow" href="{f:uri.typolink(parameter:'{settings.copyright_link}')}">
+													<f:cObject typoscriptObjectPath="lib.copyright"/> 
+												</a>
+											</f:then>
+											<f:else>
+												<f:cObject typoscriptObjectPath="lib.copyright"/>
+											</f:else>
+										</f:if>
 									</p>
 						</f:if>
 	        </div>
