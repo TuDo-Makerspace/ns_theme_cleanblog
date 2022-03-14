@@ -1,56 +1,56 @@
 <!-- Footer -->
 <hr>
 <footer>
-    <div class="container">
-      	<div class="row">
-	        <div class="col-lg-8 col-md-10 mx-auto">
-						<ul class="list-inline text-center">
-							<f:if condition="{settings.twitter}">
-								<li class="list-inline-item">
-									<f:link.typolink parameter="{settings.twitter}">
-										<span class="fa-stack fa-lg">
-											<i class="fas fa-circle fa-stack-2x"></i>
-										<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-										</span>
-									</f:link.typolink>
-								</li>
-							</f:if>
-							<f:if condition="{settings.facebook}">
-								<li class="list-inline-item">
-									<f:link.typolink parameter="{settings.facebook}">
-										<span class="fa-stack fa-lg">
-											<i class="fas fa-circle fa-stack-2x"></i>
-											<i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-										</span>
-									</f:link.typolink>
-								</li>
-							</f:if>
-							<f:if condition="{settings.github}">
-								<li class="list-inline-item">
-									<f:link.typolink parameter="{settings.github}">
-										<span class="fa-stack fa-lg">
-											<i class="fas fa-circle fa-stack-2x"></i>
-											<i class="fab fa-github fa-stack-1x fa-inverse"></i>
-										</span>
-									</f:link.typolink>
-								</li>
-							</f:if>
-						</ul>
-						<f:if condition="{settings.copyright_text}">
-									<p class="copyright text-muted">
-										<f:if condition="{settings.copyright_link}">
-											<f:then>
-												<a target="_blank" rel="nofollow" href="{f:uri.typolink(parameter:'{settings.copyright_link}')}">
-													<f:cObject typoscriptObjectPath="lib.copyright"/> 
-												</a>
-											</f:then>
-											<f:else>
-												<f:cObject typoscriptObjectPath="lib.copyright"/>
-											</f:else>
-										</f:if>
-									</p>
-						</f:if>
-	        </div>
-      	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          <f:if condition="{settings.twitter}">
+            <li class="list-inline-item">
+              <f:link.typolink parameter="{settings.twitter}">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </f:link.typolink>
+            </li>
+          </f:if>
+          <f:if condition="{settings.facebook}">
+            <li class="list-inline-item">
+              <f:link.typolink parameter="{settings.facebook}">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </f:link.typolink>
+            </li>
+          </f:if>
+          <f:if condition="{settings.github}">
+            <li class="list-inline-item">
+              <f:link.typolink parameter="{settings.github}">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </f:link.typolink>
+            </li>
+          </f:if>
+        </ul>
+        <f:if condition="{settings.copyright_text}">
+          <p class="copyright text-muted">
+            <f:if condition="{settings.copyright_link}">
+              <f:then>
+                <a target="_blank" rel="nofollow" href="{f:uri.typolink(parameter:'{settings.copyright_link}')}">
+                  <f:cObject typoscriptObjectPath="lib.copyright"/> 
+                </a>
+              </f:then>
+              <f:else>
+                <f:cObject typoscriptObjectPath="lib.copyright"/>
+              </f:else>
+            </f:if>
+          </p>
+        </f:if>
+      </div>
     </div>
+  </div>
 </footer>
