@@ -19,6 +19,11 @@ ol li {
   margin-top: 15px;
 }
 
+/* Don't add padding on inline list items */
+li.list-inline-item{
+	padding-left: 0px;
+}
+
 /* cms page css */
 
 .ce-align-left {
