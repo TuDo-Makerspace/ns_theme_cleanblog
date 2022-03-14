@@ -1,7 +1,9 @@
 plugin.tx_nsCleanblog.settings {
-	facebook = {$ns_theme_cleanblog.website.settings.facebook}
-	twitter = {$ns_theme_cleanblog.website.settings.twitter}
+	facebook = {$ns_basetheme.website.settings.seo_facebook_link}
+	twitter = {$ns_basetheme.website.settings.seo_twitter_link}
 	github = {$ns_theme_cleanblog.website.settings.github}
+	copyright_text = {$ns_basetheme.website.settings.copyright}
+	copyright_link = {$ns_theme_cleanblog.website.settings.copyright_link}
 	logo = {$ns_basetheme.website.settings.logo}
 	rootpage = {$ns_basetheme.website.settings.rootpage}
 
@@ -21,8 +23,6 @@ plugin.tx_nsCleanblog.settings {
 	defaultFontsName = {$ns_theme_cleanblog.website.fonts.defaultFontsName}
 	headingFontsName = {$ns_theme_cleanblog.website.fonts.headingFontsName}
 
-	linktext = {$ns_theme_cleanblog.website.hfooter.linktext}
-	link = {$ns_theme_cleanblog.website.hfooter.link}
 	logo_width = {$ns_basetheme.website.settings.logo_width}
 	logo_height = {$ns_basetheme.website.settings.logo_height}
 	logo_text = {$ns_basetheme.website.settings.logo_text}

@@ -1,3 +1,19 @@
+# Alter Theme Option Module (Overrides ext/ns_basetheme/Configuration/TypoScript/constants.typoscript)
+ns_basetheme {
+    website {
+	settings {
+		#cat = ""
+		footer_menu =
+		
+		#cat = ns_basetheme/120/01; type=string; label=Footer Copyright Link
+		copyright_link =
+
+		#cat = ns_seo/220/01; type=string; label=GitHub Link: Configure your GitHub page's link
+		seo_github_link = https://github.com/
+	}
+    }
+}
+
 # Let's define some constants for global configuration
 ns_theme_cleanblog {	
 	website {
@@ -44,24 +60,15 @@ ns_theme_cleanblog {
 			headingFontsName = 'lora'
 		}
 		settings {
-			#cat = ns_theme_cleanblog/website/settings/01; type=string; label=Footer Facebook Link
-			facebook = 
-
-			#cat = ns_theme_cleanblog/website/settings/02; type=string; label=Footer Twitter Link
-			twitter = 
-
 			#cat = ns_theme_cleanblog/website/settings/03; type=string; label=Footer Github Link
-			github = 
+			github = {$ns_basetheme.website.settings.seo_github_link}
 
 			#cat = ns_theme_cleanblog/website/settings/04; type=string; label=Google Analytics ID
-			googleanalytics = 
+			googleanalytics = {$ns_basetheme.website.settings.googleanalytics}
+			
+			#cat = ns_theme_cleanblog/website/hfooter/06; type=string; label=Footer Copyright Link
+			copyright_link = {$ns_basetheme.website.settings.copyright_link}
 		}
-		hfooter {
-            #cat = ns_theme_cleanblog/website/hfooter/01; type=string; label=Footer Copyright Last Link Text
-            linktext =
-            #cat = ns_theme_cleanblog/website/hfooter/02; type=string; label=Footer Copyright Last Link
-            link =
-        }
 		paths {
 			#cat = ns_theme_cleanblog/website/settings/01; type=string; label=Template Path
 			templateRootPath = EXT:ns_theme_cleanblog/Resources/Private/Templates/
