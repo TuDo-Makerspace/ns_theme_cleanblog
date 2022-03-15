@@ -4,7 +4,7 @@ ns_basetheme {
 	settings {
 		#cat = ""
 		footer_menu =
-		
+
 		#cat = ns_basetheme/120/01; type=string; label=Footer Copyright Link
 		copyright_link =
 
@@ -65,7 +65,7 @@ ns_theme_cleanblog {
 
 			#cat = ns_theme_cleanblog/website/settings/04; type=string; label=Google Analytics ID
 			googleanalytics = {$ns_basetheme.website.settings.googleanalytics}
-			
+
 			#cat = ns_theme_cleanblog/website/hfooter/06; type=string; label=Footer Copyright Link
 			copyright_link = {$ns_basetheme.website.settings.copyright_link}
 		}
