@@ -1,0 +1,27 @@
+// Backend layout for our Front Page
+mod.web_layout.BackendLayouts {
+  frontpage {
+	  title = Frontpage
+    icon = EXT:ns_basetheme/Resources/Public/Icons/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Welcome
+                colPos = 0
+              }
+              2 {
+                name = Info
+                colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

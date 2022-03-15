@@ -79,6 +79,9 @@ page {
 			default = TEXT
 			default.value = {$ns_theme_cleanblog.website.paths.templateRootPath}Default.html
 
+			pagets__frontpage = TEXT
+			pagets__frontpage.value = {$ns_theme_cleanblog.website.paths.templateRootPath}Frontpage.html
+
 			pagets__content = TEXT
 			pagets__content.value = {$ns_theme_cleanblog.website.paths.templateRootPath}Content.html
 		}
