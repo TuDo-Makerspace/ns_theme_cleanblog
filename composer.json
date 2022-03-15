@@ -1,7 +1,7 @@
 {
-  "name": "nitsan/ns-theme-cleanblog",
+  "name": "tudomakerspace/ns-theme-cleanblog",
   "type": "typo3-cms-extension",
-  "description": "T3 Clean Blog Free TYPO3 Template is a premium TYPO3 theme for personal or company blog with minimal & clean design, super easy settings, light, and ultra-fast page speed. Live-Demo: https://demo.t3terminal.com/?theme=t3t-cleanblog PRO version: https://t3terminal.com/t3-agency-free-business-typo3-template",
+  "description": "The TU-DO Makerspace's fork of NITSAN's Clean Blog theme",
   "keywords": [
     "TYPO3 CMS",
     "blog",
@@ -11,8 +11,14 @@
     "theme",
     "web"
   ],
-  "homepage": "https://github.com/nitsan-technologies/ns_theme_blog/",
+  "homepage": "https://github.com/TU-DO-Makerspace/ns_theme_cleanblog/",
   "authors": [
+    {
+      "name": "Patrick Pedersen",
+      "email": "ctx.xda@gmail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/CTXz"
+    },
     {
         "name": "Team NITSAN",
         "email": "info@nitsan.in",
@@ -21,7 +27,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/nitsan-technologies/ns_theme_blog/issues"
+    "issues": "https://github.com/TU-DO-Makerspace/ns_theme_cleanblog/issues"
   },
   "license": "MIT",
   "require": {
