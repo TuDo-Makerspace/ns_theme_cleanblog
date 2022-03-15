@@ -1,3 +1,6 @@
+# Import helpers
+@import "EXT:ns_theme_cleanblog/Configuration/TypoScript/Page/Helper"
+
 plugin.tx_nsCleanblog.settings {
 	facebook = {$ns_basetheme.website.settings.seo_facebook_link}
 	twitter = {$ns_basetheme.website.settings.seo_twitter_link}
