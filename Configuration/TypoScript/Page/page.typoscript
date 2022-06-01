@@ -5,6 +5,7 @@ plugin.tx_nsCleanblog.settings {
 	facebook = {$ns_basetheme.website.settings.seo_facebook_link}
 	twitter = {$ns_basetheme.website.settings.seo_twitter_link}
 	github = {$ns_theme_cleanblog.website.settings.github}
+	email = {$ns_theme_cleanblog.website.settings.email}
 	copyright_text = {$ns_basetheme.website.settings.copyright}
 	copyright_link = {$ns_theme_cleanblog.website.settings.copyright_link}
 	logo = {$ns_basetheme.website.settings.logo}

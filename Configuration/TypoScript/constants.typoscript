@@ -8,6 +8,9 @@ ns_basetheme {
 		#cat = ns_basetheme/120/01; type=string; label=Footer Copyright Link
 		copyright_link =
 
+		#cat = ns_basetheme/120/01; type=string; label=Footer Email
+		email_link =
+
 		#cat = ns_seo/220/01; type=string; label=GitHub Link: Configure your GitHub page's link
 		seo_github_link = https://github.com/
 	}
@@ -65,6 +68,9 @@ ns_theme_cleanblog {
 
 			#cat = ns_theme_cleanblog/website/settings/04; type=string; label=Google Analytics ID
 			googleanalytics = {$ns_basetheme.website.settings.googleanalytics}
+
+			#cat = ns_theme_cleanblog/website/settings/05; type=string; label=Footer Email Link
+			email = {$ns_basetheme.website.settings.email_link}
 
 			#cat = ns_theme_cleanblog/website/hfooter/06; type=string; label=Footer Copyright Link
 			copyright_link = {$ns_basetheme.website.settings.copyright_link}
